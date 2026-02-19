@@ -1,0 +1,8 @@
+algo_digitado = input("Digite algo: ")
+print(type(algo_digitado))
+print(algo_digitado.isnumeric())
+print(algo_digitado.isalpha())
+print(algo_digitado.isupper())
+print(algo_digitado.isalnum())
+print(algo_digitado.isdecimal())
+print(algo_digitado.islower())
