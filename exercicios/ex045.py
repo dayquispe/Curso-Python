@@ -7,37 +7,41 @@ escolha_jogador = int(input("Escolha sua jogada: \n"
                              "==> "))
 escolha_computador = randint(1, 3)
 
+ganhou = "Você GANHOU!"
+perdeu = "Você PERDEU !"
+empate = "Houve EMPATE!"
+
 if escolha_computador == 1:
     print(f"Computador: Pedra")
     if  escolha_jogador == 1:
         print(f"Você: Pedra\n"
-              f"EMPATE!")
-    if escolha_jogador == 2:
+              f"{empate}")
+    elif escolha_jogador == 2:
         print(f"Você: Papel\n"
-              f"Você GANHOU!")
-    if escolha_jogador == 3:
+              f"{ganhou}")
+    else:
         print(f"Você: Tesoura\n"
-              f"Você PERDEU!")
+              f"{perdeu}")
 elif escolha_computador == 2:
     print(f"Computador: Papel")
     if  escolha_jogador == 2:
         print(f"Você: Papel\n"
-              f"EMPATE!")
-    if escolha_jogador == 1:
+              f"{empate}")
+    elif escolha_jogador == 1:
         print(f"Você: Pedra\n"
-              f"Você PERDEU!")
-    if escolha_jogador == 3:
+              f"{perdeu}")
+    else:
         print(f"Você: Tesoura\n"
-              f"Você GANHOU!")
+              f"{ganhou}")
 else:
     print(f"Computador: Tesoura")
     if escolha_jogador == 3:
         print(f"Você: Tesoura\n"
-              f"EMPATE!")
-    if escolha_jogador == 2:
+              f"{empate}")
+    elif escolha_jogador == 2:
         print(f"Você: Papel\n"
-              f"Você PERDEU!")
-    if escolha_jogador == 1:
+              f"{perdeu}")
+    else:
         print(f"Você: Pedra\n"
-              f"Você GANHOU!")
+              f"{ganhou}")
 
